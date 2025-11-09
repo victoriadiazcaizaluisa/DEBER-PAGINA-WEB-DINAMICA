@@ -53,6 +53,11 @@ body::before {
     src: url('../fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf');
 }
 
+.fuente1{
+    font-family: 'Festive';
+    
+}
+
 .fuente-texto{
     font-family:'FrederickatheGreat';
     text-align: center;
@@ -63,4 +68,15 @@ body::before {
     color: azure;
     text-align: center;
     font-size:larger;
+}
+
+.fuente3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align:center;
+    color:black;
+}
+
+.header-estilo{
+    background-repeat: repeat;
 }
