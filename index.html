@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Clean Blog - Start Bootstrap Theme</title>
+        <title> EL VALS DE PALABRAS DE OPHELIA</title>
+        <link rel="stylesheet" href="./public/css/estilos.css">
         <link rel="icon" type="image/x-icon" href="./public/vendor/templade/assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -15,11 +16,11 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="./public/vendor/templade/css/styles.css" rel="stylesheet" />
     </head>
-    <body>
+    <body class="fondo1">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="./index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="./index.html">¡BIENVENIDO!</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -35,114 +36,149 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('./public/vendor/templade/assets/img/home-bg.jpg')">
+        <header class="masthead" style="background-image: url('./public/imgs/fondo-de-escritura.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                            <h1>Clean Blog</h1>
-                            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                            <h1 class="fuente-texto">EL VALS DE PALABRAS DE OPHELIA</h1>
+                            <span class="fuente-texto">Escritora de sueños y palabras✒️🌙🌹 </span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- Main Content-->
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="./views/post.html">
-                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
-                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on September 24, 2023
-                        </p>
+        <main>
+            <section>
+            <!-- Carrusel principal del Home -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide mt-4">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner rounded-4 shadow-lg">
+                <!-- Slide 1 -->
+                <div class="carousel-item active" data-bs-interval="7000">
+                <img src="./public/imgs/salvar-palabras.jpg"  class="foto-carrusel" alt="palbras-escritas">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                    <h5 class="fuente-texto2"><i class="bi bi-pencil"></i> Las palabras me salvaron más de una vez</h5>
+                    <p class="text-light">Hoy las comparto contigo.</p>
+                </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" data-bs-interval="7000">
+                <img src="./public/imgs/no-dije.jpg" class="foto-carrusel" alt="no-dije">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                    <h5 class="fuente-texto2"><i class="bi bi-book"></i> No son solo poemas o libros</h5>
+                    <p class="text-light">Es todo aquello que no me atreví a decir.</p>
+                </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" data-bs-interval="7000">
+                <img src="./public/imgs/escribir-noche.jpg" class="foto-carrusel" alt="Redes sociales y tazas de café">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                    <h5 class="fuente-texto2"><i class="bi bi-stars"></i> Bienvenido a mi rincón</h5>
+                    <p class="text-light">Donde los versos encuentran refugio 🌙✨</p>
+                    <div class="mt-2">
+                    
                     </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="./views/post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on September 18, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="./views/post.html">
-                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on August 24, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="./views/post.html">
-                            <h2 class="post-title">Failure is not an option</h2>
-                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on July 8, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                </div>
                 </div>
             </div>
-        </div>
-        <!-- Footer-->
-        <footer class="border-top">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+            </section>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            </div>
+
+            <section class="text-center p-4">
+            <h2 class="fuente-texto">Hola, soy Victoria Díaz</h2>
+            <p>Escritora y amante de las palabras que sanan. Aquí comparto poemas, pensamientos y parte de mi viaje literario. Si te gusta leer con el alma, estás en el lugar correcto.</p>
+            <a href="./views/about.html" class="btn btn-outline-dark mt-3">Conóceme más</a>
+            </section>
+            
+
+            <section id="explora-mi-mundo">
+            <div class="container">
+                <h2 class="fuente-texto">💡 Explora mi mundo</h2>
+                <div class="row justify-content-center">
+                
+                <!-- Card 1: Mis escritos -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                    <img src="./public/imgs/pluma y papel.jpg" class="card-img-top" alt="Pluma sobre papel">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fuente-texto">Mis escritos</h5>
+                        <p class="card-text">“Poemas que escribí en noches de insomnio y cafés fríos.”</p>
+                        <a href="./views/post.html" class="btn btn-outline-dark mt-auto">Leer poemas</a>
+                    </div>
                     </div>
                 </div>
+
+                <!-- Card 2: Redes y lecturas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                    <img src="./public/imgs/redes-sociales.jpg" class="card-img-top" alt="Celular con redes sociales abiertas">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fuente-texto">Redes y lecturas</h5>
+                        <p class="card-text">“Encuentra mis lecturas, reflexiones y videos en TikTok e Instagram.”</p>
+                        <div class="mt-auto">
+                        <a href="https://www.tiktok.com/@ophelia_letter20?_r=1&_t=ZM-91F7S6Vg47M" target="_blank" class="btn btn-outline-dark me-2">
+                            <i class="bi bi-tiktok">Tiktok</i>
+                        </a>
+                        <a href="https://www.instagram.com/ophelia_letter67?igsh=NWlmdmp0dWx2dTUy" target="_blank" class="btn btn-outline-dark">
+                            <i class="bi bi-instagram">Instagram</i>
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Mi libro -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                    <img src="./public/imgs/en-inkspired.jpg" class="card-img-top" alt="Portada de libro o libros apilados">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fuente-texto">Mi libro</h5>
+                        <p class="card-text">“Descubre <em>Una última puerta</em>, mi primer libro publicado en Inkspired.”</p>
+                        <a href="https://getinkspired.com/u/ophelia_letter/" target="_blank" class="btn btn-outline-dark mt-auto">Leer en Inkspired</a>
+                    </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </section>
+
+        </main>
+        <!-- Footer-->
+        <footer >
+            
+            <div class="container px-4 px-lg-5">
+               <div class="container">
+                <div class="mb-3 d-flex justify-content-center align-items-center gap-3">
+                <a href="https://www.instagram.com/ophelia_letter67?igsh=NWlmdmp0dWx2dTUy" target="_blank">
+                    <img src="./public/imgs/instagram-logo.jpg" alt="Instagram" width="70" height="70" class="footer-logo">
+                </a>
+                <a href="https://www.tiktok.com/@ophelia_letter20?_r=1&_t=ZM-91F7S6Vg47M" target="_blank">
+                    <img src="./public/imgs/tiktok-logo.jpg" alt="TikTok" width="70" height="70" class="footer-logo">
+                </a>
+                <a href="https://getinkspired.com/u/ophelia_letter/" target="_blank">
+                    <img src="./public/imgs/logo-inkspired.jpg" alt="Inkspired" width="70" height="70" class="footer-logo">
+                </a> 
+            </div>
+            
+            <div class="parrafo1">Copyright &copy; Victoria Díaz - Todos los derechos reservados</div>
             </div>
         </footer>
         <!-- Bootstrap core JS-->

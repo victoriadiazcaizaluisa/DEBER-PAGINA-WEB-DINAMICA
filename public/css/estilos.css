@@ -1,0 +1,66 @@
+.parrafo1{
+    text-align: center;
+    color:black;
+    font-style:italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    opacity: 50%;
+}
+
+body{
+    position: relative;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;   
+}
+
+/* Fondo borroso */
+body::before {
+  content: "";
+  position: fixed; /* se mantiene fijo al hacer scroll */
+  inset: 0;
+  background-image: url('../imgs/fondo-lino.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(2px); 
+  transform: scale(1.05); 
+  z-index: -1; /* lo manda detrás del contenido */
+  opacity: 0.78; /* lo hace un poco más tenue */
+}
+
+.foto-carrusel{
+    
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto; /* mantiene proporción */
+    filter: brightness(1.1) contrast(1.15) saturate(1.1);
+    image-rendering: -webkit-optimize-contrast;
+    object-fit: contain; /* ajusta sin recortar */
+
+}
+
+@font-face{
+    font-family: 'Festive';
+    src: url('../fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FrederickatheGreat';
+    src: url('../fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf');
+}
+
+.fuente-texto{
+    font-family:'FrederickatheGreat';
+    text-align: center;
+}
+
+.fuente-texto2{
+    font-family: 'FrederickatheGreat';
+    color: azure;
+    text-align: center;
+    font-size:larger;
+}
