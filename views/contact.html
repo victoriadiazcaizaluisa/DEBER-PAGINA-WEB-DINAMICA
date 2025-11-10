@@ -14,12 +14,13 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../public/vendor/templade/css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../public/css/estilos.css">
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="../index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="../index.html">¡BIENVENIDO!</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -35,24 +36,24 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('../public/vendor/templade/assets/img/contact-bg.jpg')">
+        <header class="masthead" style="background-image: url('../public/imgs/contactame.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="page-heading">
-                            <h1>Contact Me</h1>
-                            <span class="subheading">Have questions? I have answers.</span>
+                            <h1 class="fuente-texto">Contáctame</h1>
+                            <span class="fuente-texto">¿Preguntas? ¡Yo tengo las respuestas!</span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Main Content-->
-        <main class="mb-4">
+        <main class="mb-4" id="main-content">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+                        <p class="fuente3">¿Quieres ponerte en contacto conmigo? Rellena el formulario de abajo para enviarme un mensaje y te responderé lo antes posible.</p>
                         <div class="my-5">
                             <!-- * * * * * * * * * * * * * * *-->
                             <!-- * * SB Forms Contact Form * *-->
@@ -61,48 +62,97 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            <form id="contactForm" action="" method="">
+                                <div class="mb-3">
+                                    <label for="name">Nombre</label>
+                                    <input class="form-control"
+                                        id="name"
+                                        name="name"
+                                        type="text"
+                                        placeholder="Victoria Diaz"
+                                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,25}"
+                                        title="Sólo letras y espacios, entre 3 y 25 caracteres"
+                                        required
+                                        minlength="3"
+                                        maxlength="25"
+                                    />
+                                    <div class="invalid-feedback">Un nombre válido es requerido (3-20 caracteres).</div>
                                 </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <div class="mb-3">
+                                    <label for="email">Email</label>
+                                    <input class="form-control"
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        placeholder="Ingresa tu email..."
+                                        required
+                                        minlength="6"
+                                        maxlength="40"
+                                    />
+                                    <div class="invalid-feedback">Por favor ingresa un email válido.</div>
                                 </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <div class="mb-3">
+                                    <label for="edad" class="form-label">Edad</label>
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="edad"
+                                        name="edad"
+                                        min="10"
+                                        max="80"
+                                        required
+                                        placeholder="20"
+                                        title="Edad entre 10 y 80"
+                                    />
+                                    <div class="invalid-feedback">Ingresa una edad entre 10 y 80.</div>
                                 </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
-                                <br />
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        To activate this form, sign up at
-                                        <br />
-                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Número de teléfono</label>
+                                    <input
+                                        class="form-control"
+                                        id="phone"
+                                        name="phone"
+                                        type="tel"
+                                        placeholder="Ingresa tu número (10 dígitos)"
+                                        pattern="[0-9]{10}"
+                                        title="El número debe tener 10 dígitos"
+                                        inputmode="numeric"
+                                        required
+                                    >
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa un número de teléfono válido de 10 dígitos.
                                     </div>
                                 </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                <!-- Submit Button-->
-                                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
+                                <div class="mb-3">
+                                    <label for="motivo" class="form-label">Motivo de contacto</label>
+                                    <select class="form-select" id="motivo" name="motivo" required>
+                                        <option value="" disabled selected>Selecciona una opción...</option>
+                                        <option value="colaboracion">Colaboración literaria</option>
+                                        <option value="evento">Invitación a evento</option>
+                                        <option value="lectura">Comentario sobre mi libro</option>
+                                        <option value="otro">Otro motivo</option>
+                                    </select>
+                                    <div class="invalid-feedback">Por favor selecciona un motivo.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message">Mensaje</label>
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        name="message"
+                                        placeholder="Ingresa tu mensaje aquí..."
+                                        style="height: 12rem"
+                                        required
+                                        minlength="3"
+                                        maxlength="300"></textarea>
+
+                                    <div class="invalid-feedback">Un mensaje es requerido (3-300 caracteres).</div>
+                                </div>
+                                <br />
+                                <div>
+                                    <button type="button" id="btnOpenModal" class="btn btn-primary">Enviar</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -110,39 +160,23 @@
             </div>
         </main>
         <!-- Footer-->
-        <footer class="border-top">
+        <footer >
+            
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
-                    </div>
-                </div>
+               <div class="container">
+                <div class="mb-3 d-flex justify-content-center align-items-center gap-3">
+                <a href="https://www.instagram.com/ophelia_letter67?igsh=NWlmdmp0dWx2dTUy" target="_blank">
+                    <img src="../public/imgs/instagram-logo.jpg" alt="Instagram" width="70" height="70" class="footer-logo">
+                </a>
+                <a href="https://www.tiktok.com/@ophelia_letter20?_r=1&_t=ZM-91F7S6Vg47M" target="_blank">
+                    <img src="../public/imgs/tiktok-logo.jpg" alt="TikTok" width="70" height="70" class="footer-logo">
+                </a>
+                <a href="https://getinkspired.com/u/ophelia_letter/" target="_blank">
+                    <img src="../public/imgs/logo-inkspired.jpg" alt="Inkspired" width="70" height="70" class="footer-logo">
+                </a> 
+            </div>
+            
+            <div class="parrafo1">Copyright &copy; Victoria Díaz - Todos los derechos reservados</div>
             </div>
         </footer>
         <!-- Bootstrap core JS-->
@@ -154,5 +188,64 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!-- Modal de confirmación -->
+        <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Confirmar envío</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                ¿Estás seguro de que deseas enviar este mensaje?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" id="confirmSend" class="btn btn-primary">Sí, enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <script>
+            // Referencias
+            const form = document.getElementById('contactForm');
+            const btnOpenModal = document.getElementById('btnOpenModal');
+            const confirmSend = document.getElementById('confirmSend');
+            const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
+
+            // Cuando se presiona enviar
+                btnOpenModal.addEventListener('click', (event) => {
+                event.preventDefault();
+                form.classList.add('was-validated'); // activa mensajes de error
+
+                if (!form.checkValidity()) {
+                return; // no abre el modal si hay errores
+                }
+
+                // si pasa validacion entonces muestra el modal
+                confirmModal.show();
+            });
+
+            // cuando se confirma el envio
+            confirmSend.addEventListener('click', () => {
+                confirmModal.hide(); // cierra modal
+
+                // redireccion con fetch
+                fetch('../views/server.html')
+                .then(response => {
+                    if (response.ok) {
+                    window.location.href = '../views/server.html';
+                    } else {
+                    alert('Error al cargar la página.');
+                    }
+                })
+                .catch(() => alert('Error en la conexión.'));
+            });
+            </script>
+
+
+
     </body>
 </html>
